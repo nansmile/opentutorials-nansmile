@@ -1,21 +1,37 @@
 <html>
-	<style type="text/css">
-		h1 {
-			color: red;
-			font-size: 100px;
-		}
-		.sub {
-			color: blue;
-		}
-		#link {
-			color: green;
-			text-decoration:none
-		}
-	</style>
-	<body>
-		<h1>Hello world</h1>
-		<h2 class="sub">Hello world</h2>
-		<h3 class="sub">Hello world</h3>
-		<a id="link" href="http://opentutorials.org">opentutorials.org</a>
+	<head>
+			<meta charset="utf-8"/>
+			<style>
+				h1{
+					border-bottom: 1px solid gray;
+					padding: 10px;
+				}
+				nav{
+					border-right: 1px solid gray;
+					width: 200px;
+					float: left;
+					height: 500px;
+				}
+				body.dark {
+					background-color: black;
+					color: white; 
+				}
+			</style>
+	</head>
+	<body class="dark" id="root">
+			<h1>JavaScript</h1>
+			<nav>
+			<ol>
+				<li>Javascript란?</li>
+				<li>변수와 상수</li>
+				<li class="zacsim" id="king">연산자</li>
+			</nav>
+			<article>
+				What is Javascript...
+				<input type="button" value="white" onclick="document.getElementById('root').setAttribute('class','')" />
+				<input type="button" value="black" onclick="document.getElementById('root').setAttribute('class','dark')" />		
+						
+			</article>	
+			</ol>		
 	</body>
 </html>
